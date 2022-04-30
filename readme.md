@@ -1,6 +1,7 @@
-# <img src="https://user-images.githubusercontent.com/81579850/166117391-736e9c74-4cd3-404e-9b51-57edd21661c4.svg" width="800px" height="150px" style="text-align: center;"><h1>Disclaimer</h1>
+# <img src="https://user-images.githubusercontent.com/81579850/166117986-2f851f36-f8b2-4da8-99c6-d547d63eded2.svg">
+<h1>Disclaimer</h1>
 
-We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Discord, or any of its subsidiaries or its affiliates. The official Discord website can be found at https://discord.com.
+We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Discord, or any of its subsidiaries or its affiliates. The official Discord website can be found at https://discord.com. The name Discord, as well as related names, marks, emblems and images are registered trademarks of their respective owners. 
 
 <h1>About</h1>
 
