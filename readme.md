@@ -1,0 +1,1 @@
+We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with the Discord, or any of its subsidiaries or its affiliates. The official Discord website can be found at https://discord.com/
