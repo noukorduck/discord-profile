@@ -1,4 +1,4 @@
-![profilemanager](https://user-images.githubusercontent.com/81579850/166117391-736e9c74-4cd3-404e-9b51-57edd21661c4.svg)
+<img src="https://user-images.githubusercontent.com/81579850/166117391-736e9c74-4cd3-404e-9b51-57edd21661c4.svg" width="800px" height="150px" style="text-align: center;">
 
 <h1>About</h1>
 
