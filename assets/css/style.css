@@ -97,6 +97,31 @@ section.background {
     font-size: 0.8rem;
 }
 
+textarea{
+    resize: none!important;
+    outline: none;
+    border: none;
+    background-color: #23272A;
+    color: white;
+    overflow: hidden;
+}
+
+textarea:focus{
+    border: none;
+    background-color: #23272A;
+}
+
+textarea #status{
+    height: 50px;
+    max-height: 50px;
+}
+
+textarea #about{
+    height: 10px;
+    max-height: 20px;
+}
+
+
 /* Divider */
 
 .profile > hr.divider {
