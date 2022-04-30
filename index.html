@@ -14,60 +14,65 @@
     <link href="./assets/css/fonts.css" rel="stylesheet">
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="icon" href="./assets/img/favicon.ico">
-    <script src="./assets/js/script.js"></script>
+    <link rel="icon" href="./assets/img/favicon.png">
 </head>
 
 <body>
     <section class="background">
         <div class="profile">
-            <div class="header"></div>
+            <div class="header"><img id="imgSel" src=""></div>
             <div class="avatar">
-                <img class="avatar" id="icon" alt="Avatar" src="./assets/img/default.png"
-                    style="border-radius: 999px; z-index: -1;">
+                <img class="avatar" id="avatar" alt="" src="./assets/img/default.png" onerror="this.src='./assets/img/default.png'"
+ style="border-radius: 999px; z-index: -1;">
             </div>
             <div class="tag">
-                <p class="name">Username</p><span class="tag">#0000</span>
+                <p id="username">Wumpus</p><span class="tag">#<snap id="tagSet">0000</snap></span>
             </div>
             <div class="badge">
                 <img id="badge" alt="Discord Staff" src="./assets/img/badges/Discord_Staff.svg">
             </div>
             <div class="status">
-                <p><textarea placeholder="Click to add a status." id="status" name="status" rows="4" cols="40" maxlength="256"></textarea><br></p>
+                <p><textarea placeholder="Click to add status" id="status" name="status" cols="39" maxlength="256" spellcheck="false"></textarea><br></p>
             </div>
             <hr class="divider">
             <div class="about">
                 <h2>ABOUT ME</h2>
-                <p><textarea placeholder="Click to add a about me." id="about" name="about" rows="3" cols="30" maxlength="256"></textarea></p>
+                <p><textarea placeholder="Click to add about me" id="about" name="about" cols="30" maxlength="256" spellcheck="false"></textarea></p>
             </div>
             <div class="note">
                 <h2>NOTE</h2>
-                <textarea placeholder="Click to add a note." id="about" name="about" rows="2" cols="30" maxlength="256"></textarea>
+                <textarea placeholder="Click to add a note" id="note" name="note" cols="30" maxlength="256"></textarea>
             </div>
         </div>
         <div class="editor">
             <div class="container">
                 <div class="name">
                     <p>Username</p>
-                    <input type="text" placeholder="Wumpus">
+                    <input type="text" placeholder="Wumpus" id="usernameValue" maxlength="29" autocomplete="off" spellcheck="false">
                 </div>
                 <div class="tag">
                     <p>Tag</p>
-                    <input type="text" placeholder="#0000">
+                    <input id="intLimitTextBox" type="text" placeholder="0000" maxlength="4" autocomplete="off">
                 </div>
-                <div class="background">
+                <div class="backgroundbg">
                     <p>Background</p>
-                    <input type="color">
+                    <input type="color" name="colorBackground" id="colorBackground" value="#36393e" autocomplete="off">
                 </div>
                 <div class="avatar">
-                    <p>Avatar</p>
-                    <input type="text" placeholder="Avatar">
+                    <p>Avatar Image</p>
+                    <input id="iconValue" type="text" placeholder="Paste URL" spellcheck="false">
                 </div>
                 <div class="banner">
-                    <p>Banner</p>
-                    <input type="text" placeholder="Banner">
+                    <p>Banner Color</p>
+                    <input type="color" name="bannerColor" id="bannerColor" value="#5865F2" autocomplete="off">
+                </div>
+                <div class="banner">
+                    <p>Banner Image</p>
+                    <input id="bannerImg" type="text" placeholder="Paste URL" autocomplete="off" spellcheck="false">
                 </div>
             </div>
         </div>
     </section>
+    <script src="./assets/js/script.js"></script>
 </body>
+</html>

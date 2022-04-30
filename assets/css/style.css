@@ -12,7 +12,7 @@
 
 section.background {
     height: 100vh;
-    background: var(--light-gray);
+    background-color: var(--light-gray);
 }
 
 /* Placement */
@@ -39,6 +39,16 @@ section.background {
     z-index: -3;
 }
 
+.profile > .header img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    align-self: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
 /* Avatar */
 
 .profile > .avatar {
@@ -61,6 +71,7 @@ section.background {
     color: #fff;
     display: flex;
     padding: 60px 20px 0;
+    white-space: nowrap;
 }
 
 .profile > .tag p.name {
@@ -95,30 +106,6 @@ section.background {
 
 .status > p {
     font-size: 0.8rem;
-}
-
-textarea{
-    resize: none!important;
-    outline: none;
-    border: none;
-    background-color: #23272A;
-    color: white;
-    overflow: hidden;
-}
-
-textarea:focus{
-    border: none;
-    background-color: #23272A;
-}
-
-textarea #status{
-    height: 50px;
-    max-height: 50px;
-}
-
-textarea #about{
-    height: 10px;
-    max-height: 20px;
 }
 
 
@@ -193,7 +180,9 @@ textarea #about{
     letter-spacing: 0.5px;
 }
 
-.note > textarea{
+/* Text Areas */
+
+textarea,p span{
     resize: none!important;
     outline: none;
     border: none;
@@ -201,9 +190,15 @@ textarea #about{
     border-radius: 5px;
     color: white;
     overflow: hidden;
+    min-height: auto;
 }
 
-.note > textarea:focus{
+textarea:focus,p span:focus{
     border: none;
     background-color: #202225;
+}
+
+textarea,p span #status{
+    height:34px;
+    max-height: 74px;
 }
