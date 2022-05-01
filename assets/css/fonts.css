@@ -4,7 +4,7 @@
 /* Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-/* Minecraft */
+/* Uni Sans */
 
 @font-face {
     font-family: 'Uni Sans';
@@ -21,3 +21,49 @@
     font-display: swap;
     src: url(../css/fonts/uni_sans_thin.otf);
 }
+
+/* Whitney */
+
+@font-face {
+    font-family: 'Whitney';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../css/fonts/whitneybold.otf);
+}
+
+@font-face {
+    font-family: 'Whitney';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../css/fonts/whitneysemibold.otf);
+}
+
+@font-face {
+    font-family: 'Whitney';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../css/fonts/whitneymedium.otf);
+}
+
+@font-face {
+    font-family: 'Whitney';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../css/fonts/whitneybook.otf);
+}
+
+@font-face {
+    font-family: 'Whitney';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(../css/fonts/whitneylight.otf);
+}
+
+
+
+

@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="✨ Support our client by puchasing some of our cosmetics!">
+    <meta property="og:image"
+        content="https://images-ext-1.discordapp.net/external/ZpRPyA7RzaEYqVzs9qKDn70X58-BdxrWHFBjuYLRPSk/https/repository-images.githubusercontent.com/487338032/2e97d0f1-9555-41bf-9a19-4322ef055ddf">
+    <meta name="description"
+        content="This is a small project developed by Naibuu#3286 and 136MasterNR#6081 as a training for getting into JavaScript. This tool only took 2 days to make, but it will be getting updates once few weeks.">
     <meta name="author" content="HTSoft Studios">
 
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
@@ -23,8 +26,8 @@
         <div class="profile">
             <div class="header"><img id="imgSel" src="" onerror="this.style.display=''"></div>
             <div class="avatar">
-                <img class="avatar" id="avatar" alt="" src="./assets/img/default.png" onerror="this.src='./assets/img/default.png'"
-                    style="border-radius: 999px; z-index: -1;">
+                <img class="avatar" id="avatar" alt="" src="./assets/img/default.png"
+                    onerror="this.src='./assets/img/default.png'" style="border-radius: 999px; z-index: -1;">
             </div>
             <div class="tag">
                 <p id="username">Wumpus</p><span class="tag">#<snap id="tagSet">0000</snap></span>
@@ -33,16 +36,19 @@
                 <img id="badge" alt="Discord Staff" src="./assets/img/badges/Discord_Staff.svg">
             </div>
             <div class="status">
-                <p><textarea placeholder="Click to edit custom status" id="status" name="status" cols="39" maxlength="256" spellcheck="false"></textarea></p>
+                <p><textarea placeholder="Click to edit custom status" id="status" name="status" cols="39"
+                        maxlength="256" spellcheck="false"></textarea></p>
             </div>
             <hr class="divider">
             <div class="about">
                 <h2>ABOUT ME</h2>
-                <p><textarea placeholder="Click to add about me" id="about" name="about" cols="30" maxlength="256" spellcheck="false"></textarea></p>
+                <p><textarea placeholder="Click to add about me" id="about" name="about" cols="30" maxlength="256"
+                        spellcheck="false"></textarea></p>
             </div>
             <div class="note">
                 <h2>NOTE</h2>
-                <textarea placeholder="Click to add a note" id="note" name="note" cols="30" maxlength="256" spellcheck="false"></textarea>
+                <textarea placeholder="Click to add a note" id="note" name="note" cols="30" maxlength="256"
+                    spellcheck="false"></textarea>
             </div>
         </div>
         <div class="editor">
@@ -59,11 +65,13 @@
                     </div>
                     <div class="backgroundbg">
                         <p>Background Color</p>
-                        <input type="color" name="colorBackground" id="colorBackground" value="#36393e" autocomplete="off">
+                        <input type="color" name="colorBackground" id="colorBackground" value="#36393e"
+                            autocomplete="off">
                     </div>
                     <div class="avatar">
                         <p>Background Image</p>
-                        <input id="bgImageValue" type="text" placeholder="Paste URL" autocomplete="off" spellcheck="false">
+                        <input id="bgImageValue" type="text" placeholder="Paste URL" autocomplete="off"
+                            spellcheck="false">
                     </div>
                     <div class="avatar">
                         <p>Avatar Image</p>
@@ -83,4 +91,5 @@
     </section>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
