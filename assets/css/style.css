@@ -11,8 +11,12 @@
 }
 
 section.background {
+    width: auto;
     height: 100vh;
     background-color: var(--light-gray);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Placement */
@@ -22,7 +26,7 @@ section.background {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    height: 600px;
+    min-height: 600px;
     width: 400px;
     background: var(--gray);
     border-radius: 10px;
@@ -60,6 +64,11 @@ section.background {
     width: 128px;
     height: 128px;
     border: 8px solid var(--gray);
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    align-self: center;
+    background-color: var(--gray);
 }
 
 /* (User)(Tag) */
@@ -105,7 +114,9 @@ section.background {
 }
 
 .status > p {
+    font-weight: 900!important;
     font-size: 0.8rem;
+    letter-spacing: 0.5px;
 }
 
 
@@ -143,7 +154,7 @@ section.background {
     float: right;
     height: 100vh;
     background: var(--gray);
-    width: 300px;
+    max-width: 300px;
     border-left: 5px solid var(--blurple);
 }
 
@@ -163,6 +174,10 @@ section.background {
     border-radius: 5px;
     color: white;
     overflow: hidden;
+}
+
+.editor #editoritems{
+    display: block;
 }
 
 /* Note */
@@ -191,14 +206,34 @@ textarea,p span{
     color: white;
     overflow: hidden;
     min-height: auto;
+    transition: background 0.15s;
 }
 
 textarea:focus,p span:focus{
     border: none;
     background-color: #202225;
+    transition: background 0.15s;
 }
 
-textarea,p span #status{
+#status{
     height:34px;
     max-height: 74px;
+}
+
+#about{
+    height:34px;
+    max-height: 204px;
+}
+
+#note{
+    height:34px;
+    max-height: 170px;
+}
+
+/** Buttons **/
+
+button{
+    border:none;
+    background-color: transparent;
+    color:white
 }

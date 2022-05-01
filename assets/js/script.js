@@ -28,7 +28,15 @@ function setInputFilter(textbox, inputFilter, errMsg) {
 setInputFilter(document.getElementById("intLimitTextBox"), function(value) {
     return /^\d*$/.test(value) && (value === "" || parseInt(value) <= 9999); }, "Must be a number between 0 and 9999!");
 
-
+// Hide Editor
+function hideEditor() {
+  var x = document.getElementById("editoritems");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+} 
 
 // Text Area Linebreak
 // Dealing with Textarea Height
@@ -76,6 +84,17 @@ function updateAll(event) {
   });
 }
 
+// Background Image
+const inputBgImg = document.querySelector('#bgImageValue');
+const logBgImg = document.getElementById('bgImage');
+
+inputBgImg.addEventListener('input', updateValueBgImg);
+
+function updateValueBgImg(e) {
+  logBgImg.style.backgroundImage = "url("+e.target.value+")";
+  console.log("idk")
+}
+
 // Username Text
 const inputName = document.querySelector('#usernameValue');
 const logName = document.getElementById('username');
@@ -83,17 +102,17 @@ const logName = document.getElementById('username');
 inputName.addEventListener('input', updateValueName);
 
 function updateValueName(e) {
-    logName.textContent = e.target.value;
+  logName.textContent = e.target.value;
 }
 
 // Tag Number
 const inputTag = document.querySelector('#intLimitTextBox');
-const logTag = document.getElementById('tagSet');
+var logTag = document.getElementById('tagSet');
 
 inputTag.addEventListener('input', updateValueTag);
 
 function updateValueTag(e) {
-    logTag.textContent = e.target.value;
+  logTag.textContent = e.target.value;
 }
 
 // Avatar Image URL
@@ -103,7 +122,7 @@ const logAvatar = document.getElementById('avatar');
 inputAvatar.addEventListener('input', updateValueAvImage);
 
 function updateValueAvImage(e) {
-    logAvatar.src = e.target.value;
+  logAvatar.src = e.target.value;
 }
 
 // Banner Color
@@ -137,6 +156,6 @@ const logBanner = document.getElementById('imgSel');
 inputBanner.addEventListener('input', updateValueBanner);
 
 function updateValueBanner(e) {
-    logBanner.src = e.target.value;
+  logBanner.src = e.target.value;
 }
 
