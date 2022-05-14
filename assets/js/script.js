@@ -234,10 +234,11 @@ function dragElement(elmnt) {
 const badgesList = document.querySelectorAll('.badges img');
 const badgesEditorList = document.querySelectorAll('.selector img');
 
-function badgesAllOff(){
+function badgesAllOff(z){
   badgesList.forEach(img => {img.style.display = 'none';});
   badgesEditorList.forEach(img => {img.style.backgroundColor = "#23272A"});
+  z.style.backgroundColor = "rgba(255, 0, 0, 0.4)"
   setTimeout(function(){
-    console.log("I am the third log after 5 seconds");
-  },5000);
+    z.style.backgroundColor = "#23272A";
+  },250);
 }
