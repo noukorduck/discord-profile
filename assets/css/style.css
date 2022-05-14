@@ -6,6 +6,7 @@
     --blurple: #5865F2;
     --white: #FFFFFF;
     --gray: #23272A;
+    --dark-gray: #171a1c;
     --light-gray: #36393e;
     --mobile: #5663F7;
 }
@@ -40,7 +41,7 @@ img {
   }
   
   ::-webkit-scrollbar-thumb {
-    background-color: var(--light-gray);
+    background-color: var(--dark-gray);
     border-radius: 15px;
   }
   
@@ -306,16 +307,32 @@ section.background {
     display: block;
 }
 
-.editor button {
+.editor button.close {
+    padding: 0;
+    background: none;
     text-align: center;
     margin: 10px;
     transition: 0.5s ease-in-out;
 }
 
-.editor button:hover {
+.editor button.close:hover {
     transform: rotate(360deg) scale(1.2);
     text-align: center;
     border-radius: 99px;
+    background: none;
+}
+
+.editor button {
+    margin: 5px 25px;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 8px;
+    background: var(--blurple);
+    transition: 0.2s;
+}
+
+.editor button:hover {
+    background: #4954cd;
 }
 
 /* Note */
