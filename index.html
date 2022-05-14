@@ -38,10 +38,29 @@
             <div class="tag">
                 <p id="username">Wumpus</p><span class="tag">#<snap id="tagSet">0000</snap></span>
             </div>
-            <div class="badge">
-                <img id="badge" alt="Discord Staff" src="./assets/img/badges/HypeSquad_Event.svg">
-                <img id="badge" alt="Discord Staff" src="./assets/img/badges/Discord_Staff.svg">
-                <img id="badge" alt="Discord Staff" src="./assets/img/badges/Bug_Hunter_level2.svg">
+            <div class="badges">
+                <img src="./assets/img/badges/boost1month.svg" alt="Booster 1 Month">
+                <img src="./assets/img/badges/boost2month.svg" alt="Booster 2 Months">
+                <img src="./assets/img/badges/boost3month.svg" alt="Booster 3 Months">
+                <img src="./assets/img/badges/boost6month.svg" alt="Booster 6 Months">
+                <img src="./assets/img/badges/boost9month.svg" alt="Booster 9 Months">
+                <img src="./assets/img/badges/boost12month.svg" alt="Booster 12 Months">
+                <img src="./assets/img/badges/boost15month.svg" alt="Booster 15 Months">
+                <img src="./assets/img/badges/boost18month.svg" alt="Booster 18 Months">
+                <img src="./assets/img/badges/boost24month.svg" alt="Booster 24 Months">
+                <img src="./assets/img/badges/Bug_Hunter.svg" alt="Bug Hunter">
+                <img src="./assets/img/badges/Bug_Hunter_level2.svg" alt="Bug Hunter Level 2">
+                <img src="./assets/img/badges/Discord_certified_moderator.svg" alt="Discord Moderator">
+                <img src="./assets/img/badges/discord_partner.svg" alt="Discord Partner">
+                <img src="./assets/img/badges/Discord_Staff.svg" alt="Discord Staff">
+                <img src="./assets/img/badges/early_supporter.svg" alt="Early Supporter">
+                <img src="./assets/img/badges/HypeSquad_Balance.svg" alt="HypeSquad Balance">
+                <img src="./assets/img/badges/HypeSquad_Bravery.svg" alt="HypeSquad Bravery">
+                <img src="./assets/img/badges/HypeSquad_Brilliance.svg" alt="HypeSquad Brilliance">
+                <img src="./assets/img/badges/HypeSquad_Event.svg" alt="HypeSquad Event">
+                <img src="./assets/img/badges/nitro.svg" alt="Discord Nitro">
+                <img src="./assets/img/badges/Server_owner.svg" alt="Server Owner">
+                <img src="./assets/img/badges/Verified_Bot_Developer.svg" alt="Early Verfied Developer">
             </div>
             <div class="status">
                 <p><textarea placeholder="Click to edit custom status" id="status" name="status" cols="39"
@@ -61,7 +80,8 @@
         </div>
         <div class="editor" id="editor">
             <div class="container">
-                <button class="close" onclick="hideEditor()"><img src="./assets/img/edit.svg" style="filter: invert(1);" width="32px"></button>
+                <button class="close" onclick="hideEditor()"><img src="./assets/img/edit.svg" style="filter: invert(1);"
+                        width="32px"></button>
                 <div class="items" id="editoritems">
                     <div class="top" onclick="location.href='https://discord.gg/xbuG66fFSW';">
                         <div class="content">
@@ -99,20 +119,47 @@
                         <input id="bannerImg" type="text" placeholder="Paste URL" autocomplete="off" spellcheck="false">
                     </div>
                     <div class="badgeedit">
-                        <button onclick="toggleDisplay(badges)" style="margin-top: 50px;"><img src="./assets/img/open.svg" style="filter: invert(1);" width="18px">  Open Badge Editor</button>
+                        <button onclick="toggleDisplay(badges)" style="margin-top: 50px;"><img
+                                src="./assets/img/open.svg" style="filter: invert(1);" width="18px"> Open Badge
+                            Editor</button>
                     </div>
                     <div class="decoedit">
-                        <button onclick="" style="margin-top: 5px;"><img src="./assets/img/open.svg" style="filter: invert(1);" width="18px">  Open Deco Editor</button>
+                        <button onclick="" style="margin-top: 5px;"><img src="./assets/img/open.svg"
+                                style="filter: invert(1);" width="18px"> Open Deco Editor</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="popup" id="badges">
+            <h2>Badge Selector</h2>
             <!-- Include a header DIV with the same name as the draggable DIV, followed by "header" -->
-            <div class="content"></div>
-            <p>Move</p>
-            <p>this</p>
-            <p>DIV</p>
+            <div class="content">
+                <div class="selector">
+                    <img class="none" src="./assets/img/none.svg" alt="None">
+                    <img src="./assets/img/badges/boost1month.svg" alt="Booster 1 Month">
+                    <img src="./assets/img/badges/boost2month.svg" alt="Booster 2 Months">
+                    <img src="./assets/img/badges/boost3month.svg" alt="Booster 3 Months">
+                    <img src="./assets/img/badges/boost6month.svg" alt="Booster 6 Months">
+                    <img src="./assets/img/badges/boost9month.svg" alt="Booster 9 Months">
+                    <img src="./assets/img/badges/boost12month.svg" alt="Booster 12 Months">
+                    <img src="./assets/img/badges/boost15month.svg" alt="Booster 15 Months">
+                    <img src="./assets/img/badges/boost18month.svg" alt="Booster 18 Months">
+                    <img src="./assets/img/badges/boost24month.svg" alt="Booster 24 Months">
+                    <img src="./assets/img/badges/Bug_Hunter.svg" alt="Bug Hunter">
+                    <img src="./assets/img/badges/Bug_Hunter_level2.svg" alt="Bug Hunter Level 2">
+                    <img src="./assets/img/badges/Discord_certified_moderator.svg" alt="Discord Moderator">
+                    <img src="./assets/img/badges/discord_partner.svg" alt="Discord Partner">
+                    <img src="./assets/img/badges/Discord_Staff.svg" alt="Discord Staff">
+                    <img src="./assets/img/badges/early_supporter.svg" alt="Early Supporter">
+                    <img src="./assets/img/badges/HypeSquad_Balance.svg" alt="HypeSquad Balance">
+                    <img src="./assets/img/badges/HypeSquad_Bravery.svg" alt="HypeSquad Bravery">
+                    <img src="./assets/img/badges/HypeSquad_Brilliance.svg" alt="HypeSquad Brilliance">
+                    <img src="./assets/img/badges/HypeSquad_Event.svg" alt="HypeSquad Event">
+                    <img src="./assets/img/badges/nitro.svg" alt="Discord Nitro">
+                    <img src="./assets/img/badges/Server_owner.svg" alt="Server Owner">
+                    <img src="./assets/img/badges/Verified_Bot_Developer.svg" alt="Early Verfied Developer">
+                </div>
+            </div>
         </div>
     </section>
     <script src="./assets/js/script.js"></script>
