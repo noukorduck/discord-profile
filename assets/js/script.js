@@ -103,17 +103,29 @@ const logName = document.getElementById('username');
 inputName.addEventListener('input', updateValueName);
 
 function updateValueName(e) {
-  logName.textContent = e.target.value;
+  if (e.target.value == '') {
+    logName.textContent = 'Wumpus';
+  } else {logName.textContent = e.target.value;}
 }
 
 // Tag Number
 const inputTag = document.querySelector('#intLimitTextBox');
-var logTag = document.getElementById('tagSet');
+const logTag = document.getElementById('tagSet');
 
 inputTag.addEventListener('input', updateValueTag);
 
 function updateValueTag(e) {
-  logTag.textContent = e.target.value;
+  if (e.target.value == '') {
+    logTag.textContent = '0000';
+  } else if (e.target.value.charAt(1) == '') {
+    logTag.textContent = e.target.value + "000"
+  } else if (e.target.value.charAt(2) == '') {
+    logTag.textContent = e.target.value + "00"
+  } else if (e.target.value.charAt(3) == '') {
+    logTag.textContent = e.target.value + "0"
+  } else {
+    logTag.textContent = e.target.value;
+  }
 }
 
 // Avatar Image URL
