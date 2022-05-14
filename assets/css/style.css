@@ -172,10 +172,14 @@ section.background {
 /* Badges */
 
 .badges {
+    direction: rtl !important;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     position: absolute;
-    margin: -125px 165px;
+    margin: -125px;
+    margin-left: 165px; 
+    margin-right: 0;
+    justify-content: flex-end
 }
 
 .badges>img {
@@ -527,6 +531,7 @@ button {
     }
 
     .badge>img {
+        float: right;
         width: 20px;
         height: 20px;
     }
@@ -584,11 +589,11 @@ button {
     z-index: 9;
     background-color: var(--dark-gray);
     border-radius: 5px;
+    border: 2px solid var(--dark-gray);
     color: #fff;
     text-align: center;
     height: 300px;
-    resize: both;
-    overflow: auto;
+    overflow: hidden;
     overflow-y: scroll;
 }
 
@@ -635,7 +640,7 @@ button {
     width: 64px;
     height: 64px;
     padding: 10px;
-    border: 2px solid var(--blurple);
+    border: 2px solid #16191b;
     cursor: pointer;
     border-radius: 5px;
     margin: 5px;
