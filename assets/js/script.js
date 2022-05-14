@@ -1,9 +1,11 @@
 // Multiuse Functions
-function toggleDisplay(x){
+function toggleDisplay(x, z){
   if (x.style.display === "block") {
     x.style.display = "none";
+    if (typeof z !== 'undefined') { z.style.backgroundColor = "#23272A"}
   } else {
     x.style.display = "block";
+    if (typeof z !== 'undefined') { z.style.backgroundColor = "rgba(87, 242, 135, 0.3)"}
   }
 }
 
@@ -188,13 +190,11 @@ function updateValueBanner(e) {
 // Make the DIV element draggable:
 dragElement(document.getElementById("badges"));
 
-dragElement(document.getElementById("popup"));
-
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
+  if (document.getElementById("popupheader")) {
     // if present, the header is where you move the DIV from:
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+    document.getElementById("popupheader").onmousedown = dragMouseDown;
   } else {
     // otherwise, move the DIV from anywhere inside the DIV:
     elmnt.onmousedown = dragMouseDown;
@@ -229,4 +229,15 @@ function dragElement(elmnt) {
     document.onmouseup = null;
     document.onmousemove = null;
   }
+}
+
+const badgesList = document.querySelectorAll('.badges img');
+const badgesEditorList = document.querySelectorAll('.selector img');
+
+function badgesAllOff(){
+  badgesList.forEach(img => {img.style.display = 'none';});
+  badgesEditorList.forEach(img => {img.style.backgroundColor = "#23272A"});
+  setTimeout(function(){
+    console.log("I am the third log after 5 seconds");
+  },5000);
 }
