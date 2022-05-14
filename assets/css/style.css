@@ -187,12 +187,12 @@ section.background {
 .status {
     padding: 0 20px;
     color: #fff;
-    opacity: 0.8;
 }
 
-.status>p {
-    font-weight: 900 !important;
+.status>textarea {
+    font-weight: 900;
     font-size: 0.8rem;
+    opacity: 0.6;
     letter-spacing: 0.5px;
 }
 
@@ -348,6 +348,10 @@ section.background {
     font-size: 0.8rem;
     opacity: 0.6;
     letter-spacing: 0.5px;
+}
+
+.note>textarea {
+    font-size: 0.8rem;
 }
 
 /* Text Areas */
