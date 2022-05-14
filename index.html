@@ -29,7 +29,7 @@
                 <img class="deco" id="deco" alt="Avatar Decoration" src="./assets/img/deco/fill/cat.png">
             </div>
             <div class="backdrop">
-                <img class="deco" id="deco" alt="Avatar Decoration" src="./assets/img/deco/back/cat.png">
+                <img class="deco" id="decodrop" alt="Avatar Decoration" src="./assets/img/deco/back/cat.png">
             </div>
             <div class="avatar">
                 <img class="avatar" id="avatar" alt="" src="./assets/img/default.png"
@@ -119,12 +119,12 @@
                         <input id="bannerImg" type="text" placeholder="Paste URL" autocomplete="off" spellcheck="false">
                     </div>
                     <div class="badgeedit">
-                        <button onclick="toggleDisplay(badges)" style="margin-top: 50px;"><img
+                        <button onclick="toggleDisplay(badges, this, '#4954cd', '#3ea25e')" style="margin-top: 50px;"><img
                                 src="./assets/img/open.svg" style="filter: invert(1);" width="18px"> Open Badge
                             Editor</button>
                     </div>
                     <div class="decoedit">
-                        <button onclick="" style="margin-top: 5px;"><img src="./assets/img/open.svg"
+                        <button onclick="toggleDisplay(deco, this, '#4954cd', '#3ea25e');toggleDisplay(decodrop, this, '#4954cd', '#3ea25e')" style="margin-top: 5px;"><img src="./assets/img/open.svg"
                                 style="filter: invert(1);" width="18px"> Open Deco Editor</button>
                     </div>
                 </div>
@@ -136,27 +136,27 @@
             <div class="content">
                 <div class="selector">
                     <img onclick="badgesAllOff(this)" class="none" src="./assets/img/none.svg" title="Clear">
-                    <img onclick="toggleDisplay(boost1month, this)" src="./assets/img/badges/boost1month.svg" title="Booster 1 Month">
-                    <img onclick="toggleDisplay(boost2month, this)" src="./assets/img/badges/boost2month.svg" title="Booster 2 Months">
-                    <img onclick="toggleDisplay(boost3month, this)" src="./assets/img/badges/boost3month.svg" title="Booster 3 Months">
-                    <img onclick="toggleDisplay(boost6month, this)" src="./assets/img/badges/boost6month.svg" title="Booster 6 Months">
-                    <img onclick="toggleDisplay(boost9month, this)" src="./assets/img/badges/boost9month.svg" title="Booster 9 Months">
-                    <img onclick="toggleDisplay(boost12month, this)" src="./assets/img/badges/boost12month.svg" title="Booster 12 Months">
-                    <img onclick="toggleDisplay(boost18month, this)" src="./assets/img/badges/boost18month.svg" title="Booster 18 Months">
-                    <img onclick="toggleDisplay(boost24month, this)" src="./assets/img/badges/boost24month.svg" title="Booster 24 Months">
-                    <img onclick="toggleDisplay(Bug_Hunter, this)" src="./assets/img/badges/Bug_Hunter.svg" title="Bug Hunter">
-                    <img onclick="toggleDisplay(Bug_Hunter_level2, this)" src="./assets/img/badges/Bug_Hunter_level2.svg" title="Bug Hunter Level 2">
-                    <img onclick="toggleDisplay(Discord_certified_moderator, this)" src="./assets/img/badges/Discord_certified_moderator.svg" title="Discord Moderator">
-                    <img onclick="toggleDisplay(discord_partner, this)" src="./assets/img/badges/discord_partner.svg" title="Discord Partner">
-                    <img onclick="toggleDisplay(Discord_Staff, this)" src="./assets/img/badges/Discord_Staff.svg" title="Discord Staff">
-                    <img onclick="toggleDisplay(early_supporter, this)" src="./assets/img/badges/early_supporter.svg" title="Early Supporter">
-                    <img onclick="toggleDisplay(HypeSquad_Balance, this)" src="./assets/img/badges/HypeSquad_Balance.svg" title="HypeSquad Balance">
-                    <img onclick="toggleDisplay(HypeSquad_Bravery, this)" src="./assets/img/badges/HypeSquad_Bravery.svg" title="HypeSquad Bravery">
-                    <img onclick="toggleDisplay(HypeSquad_Brilliance, this)" src="./assets/img/badges/HypeSquad_Brilliance.svg" title="HypeSquad Brilliance">
-                    <img onclick="toggleDisplay(HypeSquad_Event, this)" src="./assets/img/badges/HypeSquad_Event.svg" title="HypeSquad Event">
-                    <img onclick="toggleDisplay(nitro, this)" src="./assets/img/badges/nitro.svg" title="Discord Nitro">
-                    <img onclick="toggleDisplay(Server_owner, this)" src="./assets/img/badges/Server_owner.svg" title="Server Owner">
-                    <img onclick="toggleDisplay(Verified_Bot_Developer, this)" src="./assets/img/badges/Verified_Bot_Developer.svg" title="Early Verfied Developer">
+                    <img onclick="toggleDisplay(boost1month, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/boost1month.svg" title="Booster 1 Month">
+                    <img onclick="toggleDisplay(boost2month, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/boost2month.svg" title="Booster 2 Months">
+                    <img onclick="toggleDisplay(boost3month, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/boost3month.svg" title="Booster 3 Months">
+                    <img onclick="toggleDisplay(boost6month, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/boost6month.svg" title="Booster 6 Months">
+                    <img onclick="toggleDisplay(boost9month, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/boost9month.svg" title="Booster 9 Months">
+                    <img onclick="toggleDisplay(boost12month, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/boost12month.svg" title="Booster 12 Months">
+                    <img onclick="toggleDisplay(boost18month, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/boost18month.svg" title="Booster 18 Months">
+                    <img onclick="toggleDisplay(boost24month, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/boost24month.svg" title="Booster 24 Months">
+                    <img onclick="toggleDisplay(Bug_Hunter, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/Bug_Hunter.svg" title="Bug Hunter">
+                    <img onclick="toggleDisplay(Bug_Hunter_level2, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/Bug_Hunter_level2.svg" title="Bug Hunter Level 2">
+                    <img onclick="toggleDisplay(Discord_certified_moderator, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/Discord_certified_moderator.svg" title="Discord Moderator">
+                    <img onclick="toggleDisplay(discord_partner, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/discord_partner.svg" title="Discord Partner">
+                    <img onclick="toggleDisplay(Discord_Staff, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/Discord_Staff.svg" title="Discord Staff">
+                    <img onclick="toggleDisplay(early_supporter, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/early_supporter.svg" title="Early Supporter">
+                    <img onclick="toggleDisplay(HypeSquad_Balance, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/HypeSquad_Balance.svg" title="HypeSquad Balance">
+                    <img onclick="toggleDisplay(HypeSquad_Bravery, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/HypeSquad_Bravery.svg" title="HypeSquad Bravery">
+                    <img onclick="toggleDisplay(HypeSquad_Brilliance, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/HypeSquad_Brilliance.svg" title="HypeSquad Brilliance">
+                    <img onclick="toggleDisplay(HypeSquad_Event, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/HypeSquad_Event.svg" title="HypeSquad Event">
+                    <img onclick="toggleDisplay(nitro, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/nitro.svg" title="Discord Nitro">
+                    <img onclick="toggleDisplay(Server_owner, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/Server_owner.svg" title="Server Owner">
+                    <img onclick="toggleDisplay(Verified_Bot_Developer, this, '#23272A', 'rgba(87, 242, 135, 0.3)')" src="./assets/img/badges/Verified_Bot_Developer.svg" title="Early Verfied Developer">
                 </div>
             </div>
         </div>

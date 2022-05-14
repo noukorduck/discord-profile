@@ -98,6 +98,7 @@ section.background {
 }
 
 /* Avatar Decoration */
+.deco *{display:none;}
 
 .profile>.backdrop {
     margin: -55px 30px;
