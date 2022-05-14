@@ -25,6 +25,12 @@
     <section class="background" id="bgImage" src="">
         <div class="profile">
             <div class="header"><img id="imgSel" src="" onerror="this.style.display=''"></div>
+            <div class="deco">
+                <img class="deco" id="deco" alt="Avatar Decoration" src="./assets/img/deco/fill/cat.png">
+            </div>
+            <div class="backdrop">
+                <img class="deco" id="deco" alt="Avatar Decoration" src="./assets/img/deco/back/cat.png">
+            </div>
             <div class="avatar">
                 <img class="avatar" id="avatar" alt="" src="./assets/img/default.png"
                     onerror="this.src='./assets/img/default.png'" style="border-radius: 999px; z-index: -1;">
@@ -33,7 +39,9 @@
                 <p id="username">Wumpus</p><span class="tag">#<snap id="tagSet">0000</snap></span>
             </div>
             <div class="badge">
+                <img id="badge" alt="Discord Staff" src="./assets/img/badges/HypeSquad_Event.svg">
                 <img id="badge" alt="Discord Staff" src="./assets/img/badges/Discord_Staff.svg">
+                <img id="badge" alt="Discord Staff" src="./assets/img/badges/Bug_Hunter_level2.svg">
             </div>
             <div class="status">
                 <p><textarea placeholder="Click to edit custom status" id="status" name="status" cols="39"
@@ -42,7 +50,7 @@
             <hr class="divider">
             <div class="about">
                 <h2>ABOUT ME</h2>
-                <p><textarea placeholder="Click to add about me" id="about" name="about" cols="30" maxlength="256"
+                <p><textarea placeholder="Click to add about me" id="about" name="about" cols="30" maxlength="158"
                         spellcheck="false"></textarea></p>
             </div>
             <div class="note">
@@ -53,8 +61,13 @@
         </div>
         <div class="editor" id="editor">
             <div class="container">
-                <button onclick="hideEditor()"><i class="fa fa-bars"></i></button>
+                <button onclick="hideEditor()"><img src="./assets/img/edit.svg" style="filter: invert(1);" width="32px"></button>
                 <div class="items" id="editoritems">
+                    <div class="top" onclick="location.href='https://discord.gg/xbuG66fFSW';">
+                        <div class="content">
+                            <h4>SUPPORT SERVER</h4>
+                        </div>
+                    </div>
                     <div class="name">
                         <p>Username</p>
                         <input type="text" placeholder="Wumpus" id="usernameValue" maxlength="29" autocomplete="off">
