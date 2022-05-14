@@ -576,6 +576,7 @@ button {
 /* In-Window Popups */
 
 .popup {
+    display: none;
     position: absolute;
     z-index: 9;
     background-color: #f1f1f1;
