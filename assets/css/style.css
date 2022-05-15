@@ -182,7 +182,7 @@ section.background {
 
 #statuscircle.dnd {
     background-color: var(--gray);
-    background-image: url("../img/status/dnd.svg");
+    background-image: url("../img/status/dnd.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
