@@ -35,7 +35,7 @@
                 <img class="avatar" id="avatar" alt="" src="./assets/img/default.png"
                     onerror="this.src='./assets/img/default.png'" style="border-radius: 999px; z-index: -1;"></img>
                 <div class="statuscircle">
-                    <img id="statuscircle" style="display:none;" class="" src="">
+                    <img id="statuscircle" style="display:none;" class="">
                 </div>
             </div>
             <div class="tag">
@@ -123,12 +123,12 @@
                     </div>
                     <div class="editorstatuscircle">
                         <p>Status Circle</p>
-                        <select id="editorstatuscircle" autocomplete="off">
-                            <option onclick="statusCircle()" value="none" selected="selected">None</option>
-                            <option onclick="statusCircle()" value="online">Online</option>
-                            <option onclick="statusCircle()" value="idle">Idle</option>
-                            <option onclick="statusCircle()" value="dnd">Do Not Disturb</option>
-                            <option onclick="statusCircle()" value="invis">Invisible</option>
+                        <select onclick="statusCircle()" id="editorstatuscircle" autocomplete="off">
+                            <option value="none" selected="selected">None</option>
+                            <option value="online">Online</option>
+                            <option value="idle">Idle</option>
+                            <option value="dnd">Do Not Disturb</option>
+                            <option value="invis">Invisible</option>
                         </select>
                     </div>
                     <div class="badgeedit">
