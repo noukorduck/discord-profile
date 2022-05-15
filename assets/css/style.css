@@ -11,6 +11,14 @@
     --mobile: #5663F7;
 }
 
+#mobiledetect {
+    display: block;
+    text-align: center;
+    color: red;
+    font: bold;
+    z-index: 2;
+}
+
 img {
     -webkit-user-drag: none;
     user-select: none;
