@@ -705,6 +705,7 @@ button {
 }
 
 .popup .content {
+    margin-top: 25px;
     padding: 10px;
     cursor: default;
     z-index: 10;
