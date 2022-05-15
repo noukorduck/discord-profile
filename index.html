@@ -33,7 +33,10 @@
             </div>
             <div class="avatar">
                 <img class="avatar" id="avatar" alt="" src="./assets/img/default.png"
-                    onerror="this.src='./assets/img/default.png'" style="border-radius: 999px; z-index: -1;">
+                    onerror="this.src='./assets/img/default.png'" style="border-radius: 999px; z-index: -1;"></img>
+                <div class="statuscircle">
+                    <img id="statuscircle" style="display:none;" class="" src="">
+                </div>
             </div>
             <div class="tag">
                 <p id="username">Wumpus</p><span class="tag">#<snap id="tagSet">0000</snap></span>
@@ -117,6 +120,16 @@
                     <div class="banner">
                         <p>Banner Image</p>
                         <input id="bannerImg" type="text" placeholder="Paste URL" autocomplete="off" spellcheck="false">
+                    </div>
+                    <div class="editorstatuscircle">
+                        <p>Status Circle</p>
+                        <select id="editorstatuscircle" autocomplete="off">
+                            <option onclick="statusCircle()" value="none" selected="selected">None</option>
+                            <option onclick="statusCircle()" value="online">Online</option>
+                            <option onclick="statusCircle()" value="idle">Idle</option>
+                            <option onclick="statusCircle()" value="dnd">Do Not Disturb</option>
+                            <option onclick="statusCircle()" value="invis">Invisible</option>
+                        </select>
                     </div>
                     <div class="badgeedit">
                         <button onclick="toggleDisplay(badges, this, '#5865F2', '#3ea25e')" style="margin-top: 50px;"><img

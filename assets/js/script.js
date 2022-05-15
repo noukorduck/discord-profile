@@ -253,3 +253,20 @@ function badgesAllOff(z){
     z.style.backgroundColor = "#23272A";
   },250);
 }
+
+// Status Cricle
+
+function statusCircle(){
+  const x = document.getElementById("editorstatuscircle");
+  const e = document.getElementById("statuscircle");
+
+  if (e.style.display === "none" && x.value != "none") {e.style.display = "block";}
+
+  if (x.value == "none") {
+    e.style.display = "none"
+  } else {
+    e.className = x.value;
+  }
+
+
+}

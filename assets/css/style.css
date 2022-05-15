@@ -9,6 +9,7 @@
     --dark-gray: #171a1c;
     --light-gray: #36393e;
     --mobile: #5663F7;
+    --text-normal: #dcddde;
 }
 
 #mobiledetect {
@@ -156,7 +157,51 @@ section.background {
     background-color: var(--gray);
 }
 
+/* Status Circle */
+#statuscircle {
+    float: left;
+    position: absolute;
+    left: 86px;
+    top: 86px;
+    z-index: 1000;
+    height: 39px;
+    width: 39px;
+    border: solid 8px var(--gray);
+    border-radius: 100%;
+}
+
+#statuscircle.online {
+    background-color: #00a661;
+}
+
+#statuscircle.idle {
+    background-color: var(--gray);
+    background-image: url("../img/status/idle.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#statuscircle.dnd {
+    background-color: var(--gray);
+    background-image: url("../img/status/dnd.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#statuscircle.invis {
+    background-color: var(--gray);
+    background-image: url("../img/status/invis.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 /* (User)(Tag) */
+#username {
+    font-weight: bold;
+}
 
 .profile>.tag {
     width: 225px;
@@ -201,7 +246,10 @@ section.background {
 
 .status {
     padding: 0 20px;
-    color: #fff;
+}
+
+#status {
+    color: var(--text-normal);
 }
 
 .status>textarea {
@@ -231,6 +279,10 @@ section.background {
 .about {
     padding: 0 20px;
     color: #fff;
+}
+
+#about {
+    color: var(--text-normal);
 }
 
 .about>h2 {
@@ -356,6 +408,9 @@ section.background {
     position: absolute;
     margin: -10px 20px;
     color: #fff;
+}
+#note{
+    color: var(--text-normal);
 }
 
 .note>h2 {
