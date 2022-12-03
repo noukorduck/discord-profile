@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react'
+import styled from '@emotion/styled'
 
 import Head from 'next/head'
 
@@ -31,12 +32,22 @@ export const StructureHead = ({
   </>
 )
 
+export const StructureStyled = styled.div`
+  div {
+    color: var(--d-gray-text);
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+`
+
 export const StructureVersion = ({ children }: Props) => (
   <>
-    <div>
-      {process.env.NEXT_APP_PROD}
-      {process.env.NEXT_APP_VERSION}
-    </div>
-    {children}
+    <StructureStyled>
+      <div>
+        {process.env.NEXT_APP_PROD} Version: {process.env.NEXT_APP_VERSION}
+      </div>
+      {children}
+    </StructureStyled>
   </>
 )

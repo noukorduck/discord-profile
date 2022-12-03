@@ -1,9 +1,9 @@
-import Head from "next/head";
-import Image from "next/image";
+import { StructureHead } from '../components/utilities/Structure'
 
 export default function Home() {
   return (
     <>
+      <StructureHead title="Home" />
     </>
-  );
+  )
 }

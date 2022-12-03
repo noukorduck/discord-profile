@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app'
-import Base from '../components/base'
+import Base from '../components/Base'
 
 import '../styles/globals.css'
 

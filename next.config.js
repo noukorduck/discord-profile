@@ -4,7 +4,7 @@ const nextConfig = {
   swcMinify: true,
 
   env: {
-    NEXT_APP_PROD: "Prod",
+    NEXT_APP_PROD: "Production",
     NEXT_APP_VERSION: process.env.npm_package_version
   },
 
