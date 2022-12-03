@@ -2,6 +2,21 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
 
-module.exports = nextConfig
+  env: {
+    NEXT_APP_PROD: "Prod",
+    NEXT_APP_VERSION: process.env.npm_package_version
+  },
+
+  async redirects() {
+    return [
+      {
+        source: "/source",
+        destination: "https://github.com/Naibuu/discord-profile",
+        permanent: true,
+      },
+    ];
+  },
+};
+
+module.exports = nextConfig;
