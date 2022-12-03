@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 
-import Navbar from './layout/Navbar'
+import Sidebar from './layout/Sidebar'
 
 type Props = {
   children?: ReactNode
@@ -8,7 +8,7 @@ type Props = {
 
 const Base = ({ children }: Props) => (
   <>
-    <Navbar />
+    <Sidebar />
     {children}
   </>
 )
