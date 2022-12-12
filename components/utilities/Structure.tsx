@@ -1,7 +1,10 @@
 import React, { ReactNode } from 'react'
+import { en, gr } from '../../translations'
+import { useRouter } from 'next/router'
 import styled from '@emotion/styled'
 
 import Head from 'next/head'
+import { LanguageLink } from '../common/Language'
 
 type Props = {
   title?: string
@@ -25,8 +28,6 @@ export const StructureHead = ({
       <meta content={description} property="og:description" />
 
       <meta content="" data-react-helmet="true" name="theme-color" />
-
-      <meta lang="English" />
     </Head>
     {children}
   </>
@@ -41,13 +42,21 @@ export const StructureStyled = styled.div`
   }
 `
 
-export const StructureVersion = ({ children }: Props) => (
-  <>
-    <StructureStyled>
-      <div>
-        Package Version: {process.env.NEXT_APP_VERSION}-{process.env.NEXT_APP_PROD}
-      </div>
-      {children}
-    </StructureStyled>
-  </>
-)
+export function StructureVersion({ children }: Props) {
+  const router = useRouter()
+  const { locale } = router
+
+  const lang = locale === 'en' ? en : gr
+
+  return (
+    <>
+      <StructureStyled>
+        <div>
+          {lang.version}: {process.env.NEXT_APP_VERSION}-
+          {process.env.NEXT_APP_PROD}
+        </div>
+        {children}
+      </StructureStyled>
+    </>
+  )
+}

@@ -1,6 +1,7 @@
 {
   "name": "discord-profiles",
   "version": "0.1.0",
+  "repository": "https://github.com/Naibuu/discord-profile",
   "private": true,
   "scripts": {
     "dev": "next dev",

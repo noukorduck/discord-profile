@@ -8,6 +8,11 @@ const nextConfig = {
     NEXT_APP_VERSION: process.env.npm_package_version
   },
 
+  i18n: {
+    locales: ["en", "gr"],
+    defaultLocale: "en"
+  },
+
   async redirects() {
     return [
       {
