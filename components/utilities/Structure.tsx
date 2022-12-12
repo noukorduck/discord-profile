@@ -45,7 +45,7 @@ export const StructureVersion = ({ children }: Props) => (
   <>
     <StructureStyled>
       <div>
-        {process.env.NEXT_APP_PROD} Version: {process.env.NEXT_APP_VERSION}
+        Package Version: {process.env.NEXT_APP_VERSION}-{process.env.NEXT_APP_PROD}
       </div>
       {children}
     </StructureStyled>

@@ -1,41 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ABC */
+
+@font-face {
+  font-family: 'ABC';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../public/static/fonts/ABCGintoNord-Black.woff");
+}
+
+@font-face {
+  font-family: 'ABC';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../public/static/fonts/ABCGintoNord-Bold.woff");
+}
+
+@font-face {
+  font-family: 'ABC';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../public/static/fonts/ABCGintoNormal-Bold.woff");
+}
+
+@font-face {
+  font-family: 'ABC';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../public/static/fonts/ABCGintoNord-Medium.woff");
+}
+
 :root {
-    /* Fonts */
+  /* Fonts */
 
-    --font-primary: 'Poppins', sans-serif;
-    --font-secondary: 'Open Sans', sans-serif;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'ABC', sans-serif;
 
-    /* Dark */
+  /* Dark */
 
-    --d-lightgray: #36393f;
-    --d-gray: #2f3136;
-    --d-darkgray: #202225;
-    --d-lightgray-text: #dcddde;
-    --d-gray-text: #8e9297;
+  --d-lightgray: #36393f;
+  --d-gray: #2f3136;
+  --d-darkgray: #202225;
+  --d-lightgray-text: #dcddde;
+  --d-gray-text: #8e9297;
 
-    /* Buttons */
+  /* Buttons */
 
-    --b-primary: #5865f2;
-    --b-primary-hover: #4752c4;
+  --b-primary: #5865f2;
+  --b-primary-hover: #4752c4;
+
+  /* Tooltip */
+
+  --t-background: #18191c;
+  --t-color: #dcddde;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 ::-webkit-scrollbar-track {
-    border-radius: 99rem;
-    background: var(--d-darkgray);
+  border-radius: 99rem;
+  background: var(--d-darkgray);
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-primary);
-    background: var(--d-lightgray)
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-primary);
+  background: var(--d-lightgray);
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }

@@ -37,6 +37,11 @@ export const SideStyled = styled.div`
     background: var(--d-darkgray);
     transition: transform 0.5s ease;
 
+    .social {
+      display: flex;
+      flex-direction: row;
+    }  
+
     .top {
       width: 100%;
       display: flex;
@@ -44,6 +49,11 @@ export const SideStyled = styled.div`
       align-items: center;
       justify-content: space-between;
       color: var(--d-lightgray-text);
+
+      h1 {
+        font-family: var(--font-secondary);
+        font-weight: 400;
+      }
 
       button {
         display: flex;

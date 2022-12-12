@@ -4,6 +4,9 @@ import { StructureVersion } from '../../utilities/Structure'
 import React, { useState } from 'react'
 import { SideStyled } from './styles'
 
+import { SocialLink } from '../../common/SocialLink'
+import { Socials } from '../../../modules/data/Socials'
+
 function Sidebar() {
   const [open, setOpen] = useState(false)
 
@@ -31,6 +34,17 @@ function Sidebar() {
             </button>
           </div>
           <div className="content"></div>
+          <div className="social">
+            {Socials.map((social) => (
+              <SocialLink
+                key={'social-' + social.tooltip}
+                icon={social.icon}
+                href={social.href}
+                size={24}
+                tooltip={social.tooltip}
+              />
+            ))}
+          </div>
           <StructureVersion />
         </div>
       </SideStyled>
